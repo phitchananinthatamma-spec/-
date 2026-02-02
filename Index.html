@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quantum Bag - Mini Probability Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>🎲 Quantum Bag</h1>
+    <p class="subtitle">มินิเกมความน่าจะเป็นแบบแปลกใหม่: เลือกถุงสุ่มแล้วเดาโอกาสให้แม่น!</p>
+
+    <div class="panel">
+      <div class="stats">
+        <div class="stat">รอบ: <span id="round">1</span>/10</div>
+        <div class="stat">คะแนน: <span id="score">0</span></div>
+        <div class="stat">สตรีค: <span id="streak">0</span></div>
+      </div>
+
+      <div class="question-box">
+        <h2 id="questionTitle">ภารกิจรอบนี้</h2>
+        <p id="missionText"></p>
+        <p class="hint" id="hintText"></p>
+      </div>
+
+      <div class="bags" id="bags"></div>
+
+      <div class="controls">
+        <label>📌 เดาว่าโอกาสสำเร็จ (%)</label>
+        <input type="range" id="guessRange" min="0" max="100" value="50">
+        <div class="guess-display">
+          <span>เดาของคุณ: </span><b id="guessValue">50%</b>
+        </div>
+
+        <button id="playBtn">เล่นรอบนี้</button>
+        <button id="resetBtn" class="secondary">เริ่มใหม่</button>
+      </div>
+
+      <div class="result" id="resultBox"></div>
+    </div>
+
+    <footer>
+      <p>แชร์ลิ้งให้เพื่อนเข้าเล่นได้เลยหลังอัปโหลดขึ้นเว็บ 🌐</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
