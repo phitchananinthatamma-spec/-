@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f18);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app {
+  max-width: 700px;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.subtitle {
+  opacity: 0.85;
+}
+
+.panel {
+  margin-top: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.stats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.stat {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.10);
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+
+.question-box {
+  background: rgba(0,0,0,0.25);
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.hint {
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+.bags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.bag {
+  cursor: pointer;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 14px;
+  transition: transform 0.15s ease;
+}
+
+.bag:hover {
+  transform: translateY(-3px);
+}
+
+.bag.selected {
+  outline: 2px solid #7df9ff;
+}
+
+.bag-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.bag-desc {
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+.controls {
+  margin-top: 10px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.guess-display {
+  margin: 6px 0 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 10px;
+  background: #7df9ff;
+  color: #000;
+}
+
+button.secondary {
+  background: rgba(255,255,255,0.12);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.result {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.25);
+  min-height: 52px;
+}
